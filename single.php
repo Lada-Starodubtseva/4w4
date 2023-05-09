@@ -13,6 +13,7 @@
         <article>
            <h3><?php the_title('<h1>','</h1>'); ?> </h3> 
            <?php the_content();  ?>  
+         
         </article>
     <hr>
     <?php endwhile;
