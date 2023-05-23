@@ -11,8 +11,13 @@
          
             $menu = "4w4";
             if(in_category('cours')){
-                $menu = "cours";
+                $menu = "Cours";
             }
+            if(get_template('Ateliers')){
+             the_post_thumbnail();
+             $menu = "Ateliers";
+         }
+        
            
             //menu peut prendre les valeurs : "4w4", "cours" 
             echo $menu;
@@ -27,26 +32,4 @@
         ?>
 
         
-</aside>
-
-<aside class="aside-ateliers">
-    
-<?php 
-         
-        
-         if(get_template('Ateliers')){
-             $menu = "ateliers";
-         }
-        
-         //menu peut prendre les valeurs : "4w4", "cours" 
-         echo $menu;
-         wp_nav_menu(array(
-             "menu" => $menu,
-             "container" => "nav"
-             
-         )) 
-
-        
-        
-     ?>
 </aside>
