@@ -458,9 +458,9 @@ p {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 14px;
-  color: #283804;
+  color: beige;
 }
-
+}
 
 ul,
 ol {
@@ -492,7 +492,6 @@ ul li,
 ol li {
   margin: 0.5rem 0rem;
   list-style-type: none;
-  font-family: cursive;
 }
 
 
@@ -749,8 +748,7 @@ mise en page générale avec display:grid
   border-radius: 15px;
   margin: 2em;
   text-align: center;
-  font-family: surcive;
-  color: white;
+  font-family: cursive;
 
 }
 
@@ -858,9 +856,8 @@ div.menu__evenements {
   background-color: #0115004d;
   border-radius: 15px;
   padding: 2%;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+width: 100%;
+margin: 1em;
 }
 
 div.menu__evenements p {
@@ -871,4 +868,34 @@ div.menu__evenements p {
   padding: 0 15px;
 
 
+}
+
+div.menu__ateliers{
+  text-align: start;
+font-size: 16px;
+font-family: cursive;
+background-color: #0115004d;
+border-radius: 15px;
+padding: 2%;
+width: 100%;
+margin: 1em;
+
+}
+
+div.menu__ateliers p{
+  text-align: start;
+font-size: 20px;
+font-family: cursive;
+margin: 1rem 0.5rem;
+padding: 0 15px;
+}
+
+div.menu__ateliers img{
+  width: 35%;
+  height: 35%;
+}
+
+.site__aside img{
+ width: 20%;
+ height: auto;
 }
