@@ -916,3 +916,7 @@ div.menu__ateliers a span.title{
  width: 20%;
  height: auto;
 }
+
+.site__aside a img{
+  display: none;
+}
