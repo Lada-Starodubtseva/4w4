@@ -4,7 +4,7 @@
 Theme Name: 2023 4w4 ada Starodubtseva
 Theme URI: https://referenced.ca
 Author: Lada starodubtseva
-Author URI: https://github.com/LadaStarodubtseva
+Author URI: https://github.com/eddytuto
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
@@ -455,12 +455,12 @@ h6 {
 }
 
 p {
-  /*
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;*/
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  font-size: 14px;
+  color: #283804;
 }
+
 
 ul,
 ol {
@@ -491,6 +491,8 @@ ol {
 ul li,
 ol li {
   margin: 0.5rem 0rem;
+  list-style-type: none;
+  font-family: cursive;
 }
 
 
@@ -624,6 +626,10 @@ pre {
   width: 100vw;
 }
 
+.site_footer_evenements {
+  justify-content: space-around;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-between;
@@ -639,14 +645,17 @@ pre {
   margin: 1em;
 }
 
-.footer3 ul#menu-porteouv{
-display: flex;
+.footer3 ul#menu-porteouv {
+  text-align: center;
+
+  display: flex;
 }
-.footer3 ul li{
+
+.footer3 ul li {
   margin: 1em;
 }
 
-.footer3 h5{
+.footer3 h5 {
   color: white;
   font-family: cursive;
   text-align: center;
@@ -670,6 +679,28 @@ display: flex;
 
   #menu-footer2.menu {
     display: block;
+  }
+
+
+  div.menu__evenements ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: min-content;
+  }
+
+}
+
+@media screen and (min-width: 1001px) {
+
+
+  div.menu__evenements nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: min-content;
+  }
+
+  div.menu__evenements nav ul li {
+    margin: 10px;
   }
 }
 
@@ -718,6 +749,8 @@ mise en page générale avec display:grid
   border-radius: 15px;
   margin: 2em;
   text-align: center;
+  font-family: surcive;
+  color: white;
 
 }
 
@@ -759,6 +792,7 @@ mise en page générale avec display:grid
 h1 {
   display: block;
   text-align: center;
+  color: white;
 }
 
 .site__main__404__body {
@@ -795,7 +829,7 @@ h1 {
   display: block;
 }
 
-.menu-notes-404 h2{
+.menu-notes-404 h2 {
   font-size: 30px;
 }
 
@@ -808,9 +842,33 @@ h1 {
 .menu-notes-404 nav ul li {
   padding: 1vw;
 }
+
 .menu-notes-404 nav ul li a {
   color: white;
   font-weight: bold;
   font-size: 20px;
 }
 
+
+
+div.menu__evenements {
+  text-align: start;
+  font-size: 16px;
+  font-family: cursive;
+  background-color: #0115004d;
+  border-radius: 15px;
+  padding: 2%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.menu__evenements p {
+  text-align: start;
+  font-size: 20px;
+  font-family: cursive;
+  margin: 1rem 0.5rem;
+  padding: 0 15px;
+
+
+}
