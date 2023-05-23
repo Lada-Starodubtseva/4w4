@@ -881,6 +881,10 @@ width: 100%;
 margin: 1em;
 
 }
+div.menu__ateliers ul{
+  display: flex;
+ 
+}
 
 div.menu__ateliers p{
   text-align: start;
@@ -895,6 +899,19 @@ div.menu__ateliers img{
   height: 35%;
 }
 
+div.menu__ateliers a{
+  display: inline-grid;
+  margin: 1em;
+}
+
+div.menu__ateliers a img{
+  width: 80%;
+height: auto;
+}
+div.menu__ateliers a span.title{
+  width: 100px;
+  justify-self: center;
+}
 .site__aside img{
  width: 20%;
  height: auto;
